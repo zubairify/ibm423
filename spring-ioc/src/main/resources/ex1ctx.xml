@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <!-- Creating bean using default constructor -->
+    <!-- <bean id="hi" class="ex1.Hello" /> -->
+    
+    <!-- Creating bean with parameterised constructor -->
+    <!-- <bean id="hi" class="ex1.Hello">
+		<constructor-arg value="Hello Spring" />
+	</bean> -->
+	
+	<!-- Creating bean using default constructor, setting value using setter method -->
+	<!-- <bean id="hi" class="ex1.Hello">
+		<property name="greeting" value="Hello Spring" />
+	</bean> -->
+	
+	<bean id="str" class="java.lang.String">
+		<constructor-arg value="Bonjour Spring" />
+	</bean>
+    
+    <!-- <bean id="hi" class="ex1.Hello">
+		<constructor-arg ref="str" />
+	</bean> -->
+	
+	<bean id="hi" class="ex1.Hello">
+		<property name="greeting" ref="str" />
+	</bean>
+</beans>
