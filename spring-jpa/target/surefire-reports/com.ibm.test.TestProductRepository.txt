@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.ibm.test.TestProductRepository
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec <<< FAILURE!
+com.ibm.test.TestProductRepository.testSave()  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.ibm.repo.ProductRepository.save(com.ibm.entity.Product)" because "this.repo" is null
+	at com.ibm.test.TestProductRepository.testSave(TestProductRepository.java:25)
+
+com.ibm.test.TestProductRepository.testFetch()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.ibm.repo.ProductRepository.fetch(int)" because "this.repo" is null
+	at com.ibm.test.TestProductRepository.testFetch(TestProductRepository.java:30)
+
+com.ibm.test.TestProductRepository.testList()  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.ibm.repo.ProductRepository.list()" because "this.repo" is null
+	at com.ibm.test.TestProductRepository.testList(TestProductRepository.java:37)
+
