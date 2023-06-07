@@ -12,7 +12,6 @@ import lombok.Setter;
 @Getter @Setter
 public class Album {
 	@Id
-	@GeneratedValue
 	private int id;
 	@Column(length = 20)
 	private String title;
