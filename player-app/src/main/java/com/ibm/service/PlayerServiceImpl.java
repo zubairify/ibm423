@@ -34,7 +34,7 @@ public class PlayerServiceImpl implements PlayerService {
 
 		Player p = repo.findById(playerId).get();
 		
-		Team t = rest.getForObject("http://localhost:9091/team/" + p.getTeamId(), Team.class);
+		Team t = rest.getForObject("http://TEAM-SERVICE/team/" + p.getTeamId(), Team.class);
 		
 		response.setPlayer(p);
 		response.setTeam(t);
